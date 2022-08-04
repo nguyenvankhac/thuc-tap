@@ -9,7 +9,7 @@ use App\Category;
 class Homecontroller extends Controller
 {
     public function home(){
-        $NewProduct = product::orderBy('updated_at','DESC')->limit(8)->get();
+        $NewProduct = product::orderBy('updated_at','DESC')->limit(10)->get();
         $SaleProduct = product::orderBy('updated_at','DESC')->where('sale_price','>',0)->limit(8)->get();
         return view('welcome',compact('NewProduct','SaleProduct'));
     }

@@ -100,7 +100,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <div class="product__price">{{ number_format($newpro->price)}}vnd  <!--<s> {{($newpro->sale_price)}} </s>vnd --></div> 
+                        <div class="product__price">{{number_format($newpro->sale_price)}}vnd  <s>{{ number_format($newpro->price)}}  </s>vnd </div> 
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
         </div>
     </div>
 </section>
-<section class="product spad">
+<!-- <section class="product spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4">
@@ -150,7 +150,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <section class="banner set-bg" data-setbg="{{url('public/ste')}}/img/banner/banner-1.jpg">
     <div class="container">
         <div class="row">

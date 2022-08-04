@@ -55,7 +55,7 @@
                                         <button> <span class="icon_loading"></span> Update cart</button>
                                     </form>
                                 </td>
-                                <td class="cart__total">{{$item->price * $item->quantity}}vnd</td>
+                                <td class="cart__total">{{ number_format($item->price * $item->quantity)}}vnd</td>
 
                                 <td class="cart__close"><a href="{{route('cart.remove',$item->id)}}"><span
                                             class="icon_close"></span></a></td>
