@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('main')
+đã sửa
 <section class="categories">
         <div class="container-fluid">
             <div class="row">
